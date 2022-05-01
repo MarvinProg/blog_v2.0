@@ -1,6 +1,6 @@
 <h2>New article</h2>
-
-<%= form_for :article do |form| %>
+<%# url: '/articles' %>
+<%= form_for :article, url: {action: "create"} do |form| %>
   <p>
     <%# <span>Title: </span><br> %>
     <%= form.label :title %><br>
