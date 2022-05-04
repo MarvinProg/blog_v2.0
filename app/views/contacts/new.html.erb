@@ -2,3 +2,16 @@
 <p>Find me in app/views/contacts/new.html.erb</p>
 
 <h2>Contacts us</h2>
+
+<%= form_for :contacts, url: {action: "create"} do |form| %>
+  <p>
+    <%# <span>Title: </span><br> %>
+    <%= form.label :email_journalist, "Email: " %><br>
+    <%= form.text_field :email_journalist %>
+  </p>
+  <p>
+    <%= form.label :message_journalist, "Message: " %><br>
+    <%= form.text_area :message_journalist %>
+  </p>
+  <%= form.submit("Save message") %>
+<% end %>
