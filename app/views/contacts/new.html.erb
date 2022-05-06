@@ -4,6 +4,15 @@
 <h2>Contacts us</h2>
 
 <%= form_for :contact, url: {action: "create"} do |form| %>
+  <% if @contact && @contact.errors.any? %>
+    <p>
+      <ul>
+        <% @contact.errors.full_messages.each do |message_string| %>
+          <li><%= message_string %></li>
+        <% end %>
+      </ul>
+    </p>
+  <% end %>
   <p>
     <%# <span>Title: </span><br> %>
     <%= form.label :email_journalist, "Email: " %><br>
