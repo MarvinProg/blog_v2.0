@@ -24,6 +24,10 @@ class ArticlesController < ApplicationController
     # render plain: params[:article].inspect
   end
 
+  def edit 
+    
+  end
+
   private
 
   def params_article 
