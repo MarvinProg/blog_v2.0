@@ -11,7 +11,10 @@
   </head>
 
   <body>
-    <a href="/users/sign_in">Sing in</a> | <a href="/users/sign_out" data-method="delete">Sing out</a>
+    <%# <a href="/users/sign_in">Sing in</a> | <a href="/users/sign_out" data-method="delete">Sing out</a>
+    <br>
+    <br> %>
+    <%= link_to "Sing in", new_user_session_path %> | <%= link_to("Sing out", destroy_user_session_path, method: :delete) %>
 
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
