@@ -16,7 +16,7 @@
     <br> %>
 
     <% if user_signed_in? %>
-      <%# <%= current_user.inspect %> <span>Hello </span> <%= current_user.email %> | <%= link_to("Sing out", destroy_user_session_path, method: :delete) %> 
+      <%# <%= current_user.inspect %> <span>Hello </span> <%= current_user.username %> | <%= link_to("Sing out", destroy_user_session_path, method: :delete) %> 
     <% else %>
       <%= link_to "Sing in", new_user_session_path %>
     <% end%>
