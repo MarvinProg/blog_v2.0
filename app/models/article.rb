@@ -5,4 +5,8 @@ class Article < ApplicationRecord
   def method_subject
     title
   end
+
+  def return_last_comment
+    comments.last
+  end
 end

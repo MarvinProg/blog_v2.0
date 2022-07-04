@@ -5,7 +5,7 @@
 <% @article.comments.each do |comment| %>
   <p>
     <%= comment.author_comment %>
-    <%= comment.body_comments %>
+    <%= comment.body_comment %>
   </p>
 <% end %>
 
@@ -16,8 +16,8 @@
     <%= form.text_field :author_comment %>
   </p>
   <p>
-    <%= form.label :body_comments %><br>
-    <%= form.text_area :body_comments %>
+    <%= form.label :body_comment %><br>
+    <%= form.text_area :body_comment %>
   </p>
   <%= form.submit("Save") %>
 <% end %>

@@ -16,4 +16,11 @@ describe Article do
       expect(article.method_subject).to eq "First player ready"
     end
   end
+
+  describe "#return_last_comment" do 
+    it "returns the last comment" do 
+      article = create(:article_whith_comments)
+      expect(article.return_last_comment.body_comment).to eq "Comment number 4"
+    end
+  end
 end
