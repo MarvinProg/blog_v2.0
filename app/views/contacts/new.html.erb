@@ -1,7 +1,8 @@
 <h1>Contacts#new</h1>
 <p>Find me in app/views/contacts/new.html.erb</p>
 
-<h2>Contacts us</h2>
+<%# <h2>Contacts us</h2> %>
+<h2><%= t('contacts.contact_us') %></h2>
 
 <%= form_for :contact, url: {action: "create"} do |form| %>
   <% if @contact && @contact.errors.any? %>
