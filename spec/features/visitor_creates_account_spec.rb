@@ -1,6 +1,6 @@
 require "rails_helper"
 
-feature "Account contact" do 
+feature "Account create" do 
   scenario "allows guest to create account" do 
     visit new_user_registration_path
 

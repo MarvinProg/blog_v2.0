@@ -4,7 +4,7 @@ feature "Create contact" do
   scenario "allows acess to contacts page" do 
     # visit '/contacts'
     visit new_contacts_path
-
+    
     expect(page).to have_content I18n.t('contacts.contact_us')
   end
 
